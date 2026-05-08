@@ -1,0 +1,10 @@
+name: Test Actions
+on:
+  workflow_dispatch: # 必须加这个，才能手动运行
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 测试运行
+        run: echo "✅ Actions 已经成功开启！"
+
